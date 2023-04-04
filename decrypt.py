@@ -12,7 +12,7 @@ def write_decrypted(given_file, encrypted_file, private_key, mod):
 
 
 def parse_args():
-    parser = ArgumentParser(description='RSA encryptor')
+    parser = ArgumentParser(description='RSA decryptor')
     parser.add_argument('-i', '--input_filename', type=str, help='Encrypted file which has to be decrypted.')
     parser.add_argument('-o', '--output_filename', type=str, help='File which will contain the decrypted data of the encrypted input file.')
     parser.add_argument('-d', '--private_key', type=int, help='Private key')
